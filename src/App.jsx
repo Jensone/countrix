@@ -21,8 +21,7 @@ function App() {
     fetch(`https://restcountries.com/v3.1/region/${region}`) // Va chercher les données de l'API
     .then((response) => response.json()) // Converti les données en JSON
     .then((data) => setCountries(data))  // On met le tableau de données dans la variable countries
-    
-  })
+  }, [region])
 
   return (
     <>
