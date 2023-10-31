@@ -14,7 +14,7 @@ function App() {
   const [countries, setCountries] = useState([])
   
   // Région sélectionnée
-  const [region, setRegion] = useState("Europe")
+  const [region, setRegion] = useState("africa")
   
   // API restcountries
   useEffect(() => {
